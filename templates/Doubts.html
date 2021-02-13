@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="{% static 'webpages/Index.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'webpages/Doubts.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Source+Serif+Pro:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+  <link type="text/css" href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" id="bootstrap-css" type="text/css" href="{% static 'webpages/css/dist/css/bootstrap.min.css' %}" >
+    <link rel="stylesheet" type="text/css" href="{% static 'webpages/css/dist/css/bootstrap.css' %}" >
+
+  <link rel="stylesheet" href="{% static 'webpages/css/dist/css/bootstrap-theme.css' %}" >
+    <title>Ekal Shiksha</title>
+
+  </head>
+  <body>
+    <!-- 2nd Navbar Starts here-->
+    <nav class="navbar navbar-default navbar-fixed-top nav1">
+      <div class="container-fluid white" id='Lowerband'>
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+         <span class="sr-only">Toggle navigation</span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+       </button>
+<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+              <li><a href="#"><h4>About us</h4></a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><h4>Courses</h4> </a>
+                        <ul  class="dropdown-menu dropdown-menu">
+                          <li><a href="{% url '6th' %}"><h4>class 6th</h4></a></li>
+                          <li><a href="{% url '7th' %}"><h4>class 7th</h4></a></li>
+                          <li><a href="{% url '8th' %}"><h4>class 8th</h4></a></li>
+                          <li><a href="{% url '9th' %}"><h4>class 9th</h4></a></li>
+                          <li><a href="{% url '10th' %}"><h4>class 10th</h4></a></li>
+                          <li class="dropdown-submenu">
+                          <a tabindex="-1" href="#" class="dropdown-submenu-toggle "><h4>class 11th</h4> </a>
+                          <ul class="dropdown-menu ">
+                            <li><a href="#"><h4>Science</h4></a></li>
+                            <li><a href="#"><h4>Commerce</h4></a></li>
+                            <li><a href="#"><h4>Arts</h4></a></li>
+                          </ul>
+                          <li class="dropdown-submenu">
+                          <a tabindex="-1" href="#" class="dropdown-submenu-toggle"><h4>class 12th</h4> </a>
+                          <ul class="dropdown-menu ">
+                            <li><a href="#"><h4>Science</h4></a></li>
+                            <li><a href="#"><h4>Commerce</h4></a></li>
+                            <li><a href="#"><h4>Arts</h4></a></li>
+                          </ul>
+                          </li>
+                          </ul>
+                        </li>
+                          <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><h4>Study Material</h4></a>
+                          <ul class="dropdown-menu">
+                            <li><a href="#"><h4>class 6th</h4></a></li>
+                            <li><a href="#"><h4>class 7th</h4></a></li>
+                            <li><a href="#"><h4>class 8th</h4></a></li>
+                            <li><a href="#"><h4>class 9th</h4></a></li>
+                            <li><a href="#"><h4>class 10th</h4></a></li>
+
+                          </ul>
+                          </li>
+                  <li><a href="#"><h4>Doubt class</h4></a></li>
+                  <li><a href="#"><h4>Competitions</h4></a></li>
+                  <li><a href="#"><h4>Teach with us</h4></a></li>
+                  <li><a href="#"><h4>More</h4></a></li>
+
+            </div>
+      </div>
+</ul>
+</nav>
+<!-- 1st navbar start here -->
+<nav class="navbar navbar-default navbar-fixed-top nav2">
+  <div class="container-fluid">
+
+
+    <div class="navbar-header">
+       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">
+
+        <p><a href="#"><img class="pull-up" src="{% static 'webpages/images/Ekal_logo.png' %}" width='25%' alt='' ></p>
+      </a>
+    </a>
+</div>
+
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+
+
+
+
+<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+      <ul id='pad'class="nav navbar-nav navbar-left ">
+
+        <div class="row">
+          <div class="col-xs-12 col-md-12 ">
+            <li id='pad' style='margin-left:0px;'><a href="#"><h4><span class="glyphicon glyphicon-search" aria-hidden="true"></span>  Enquiry  Now &nbsp;</h4> </a>
+
+
+
+    </div>
+  </div>
+
+</ul>
+
+<ul id='pad'class="nav navbar-nav navbar-left ">
+<div class="row">
+  <div class="col-xs-12 col-md-12 ">
+  <li id='pad' style='margin-left:50px;'><a href="#" ><h4><span class="glyphicon glyphicon-user" aria-hidden="true"></span>  Sign In &nbsp;</h4> </a>
+  </li></div>
+</div>
+
+</ul>
+<ul id='pad'class="nav navbar-nav navbar-right ">
+<div class="row">
+  <div class="col-xs-12 col-md-12 "style="padding-right:0px;margin-right:20px;">
+  <li id='pad' ><a href="#" ><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>  8130682501 &nbsp; </a>
+  </li></div>
+  <div class="col-xs-12 col-md-12 ">
+  <li id='pad' ><a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcRzBWVHwwpBgTtmnMDMpQkrrhrZRHZGFhgBxJqMrBmbcdRghJMXzwLJlLtsjzDCJNcqwSLjv" ><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>  EkalShiksha2@gmail.com &nbsp; </a>
+  </li></div>
+</div>
+
+</ul>
+</div>
+</div>
+
+
+</nav>
+<div class="container">
+
+
+
+  <br>
+  <h1 class='para' id='font'><b>Having doubts?</h1>
+    <br>
+    <div class="jumbotron">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+
+</div>
+<div id='Lowerband'class="jumbotron white heading ">
+  <h1 class='para' ><strong>Want to solve your doubts?</strong></h1>
+  <div class="row">
+    <div class="col-xs-4 col-lg-5"></div>
+    <div class="col-xs-4 col-lg-5">
+      <button class="btn btn-danger btn-lg" type="button" data-toggle="modal" data-target="#myModal">Contact Us!!!</button>
+
+      <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+
+          <!-- Modal content-->
+
+
+
+          <div class="modal-content">
+            <div class="modal-header">
+
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title"><p><a href="{% url 'index' %}"><img class="pull-up" src="{% static 'webpages/images/Ekal_logo.png' %}" width='40%' alt='' ></p></h4></a>
+                <br>
+
+
+            <div class="form-group">
+
+
+        <form method="post">
+          {% csrf_token %}
+          {{ form.as_p }}
+          <div class="row">
+          <div class="col-md-5 col-xs-5"></div>
+          <div class="col-md-5 col-xs-5">
+            <button class="btn btn-primary btn-lg para" type="submit" name="button">Post</button>
+          </div>
+        </div>
+        </form>
+          </div>
+        </div>
+      </div>
+    </div>
+      </div>
+    </div>
+    <div class="col-xs-4 col-lg-5"></div>
+  </div>
+</div>
+
+  </div>
+</div>
+<div class="container">
+    <section style="height:80px;"></section>
+	<div class="row" style="text-align:center;">
+		<h2>Bootstrap Dark Footer UI</h2>
+	</div>
+      <footer class="footer-bs">
+        <div class="row">
+        	<div class="col-md-3 footer-brand animated fadeInLeft">
+            	<h2>Logo</h2>
+                <p>Suspendisse hendrerit tellus laoreet luctus pharetra. Aliquam porttitor vitae orci nec ultricies. Curabitur vehicula, libero eget faucibus faucibus, purus erat eleifend enim, porta pellentesque ex mi ut sem.</p>
+                <p>© 2014 BS3 UI Kit, All rights reserved</p>
+            </div>
+        	<div class="col-md-4 footer-nav animated fadeInUp">
+            	<h4>Menu —</h4>
+            	<div class="col-md-6">
+                    <ul class="pages">
+                        <li><a href="#">Travel</a></li>
+                        <li><a href="#">Nature</a></li>
+                        <li><a href="#">Explores</a></li>
+                        <li><a href="#">Science</a></li>
+                        <li><a href="#">Advice</a></li>
+                    </ul>
+                </div>
+            	<div class="col-md-6">
+                    <ul class="list">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contacts</a></li>
+                        <li><a href="#">Terms & Condition</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+        	<div class="col-md-2 footer-social animated fadeInDown">
+            	<h4>Follow Us</h4>
+            	<ul>
+                	<li><a href="#">Facebook</a></li>
+                	<li><a href="#">Twitter</a></li>
+                	<li><a href="https://www.instagram.com/ekal_shiksha/" target="_blank">Instagram</a></li>
+                	<li><a href="#">Linkdin</a></li>
+                </ul>
+            </div>
+        	</div>
+    </footer>
+  </div>
+</body>
+<script src="{% static 'webpages/css/dist/js/bootstrap.min.js' %}" crossorigin="anonymous"></script>
+</html>
