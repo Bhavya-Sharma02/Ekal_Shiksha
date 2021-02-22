@@ -50,7 +50,7 @@
 
 body {
    padding-top: 170px;
-}
+   }
 #pad{
   padding-top: 20px;
 
@@ -184,3 +184,4 @@ body {
     border-right: 35px solid #569cbd;
     border-bottom: 15px solid transparent;
   }
+#more {display: none;}

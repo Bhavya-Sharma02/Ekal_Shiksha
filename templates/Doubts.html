@@ -22,14 +22,14 @@
     <!-- 2nd Navbar Starts here-->
     <nav class="navbar navbar-default navbar-fixed-top nav1">
       <div class="container-fluid white" id='Lowerband'>
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
          <span class="sr-only">Toggle navigation</span>
          <span class="icon-bar"></span>
          <span class="icon-bar"></span>
          <span class="icon-bar"></span>
        </button>
-<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav navbar-right">
+  <div class="collapse navbar-collapse" id="navbar">
+        <ul class="nav navbar-nav navbar-left">
               <li><a href="#"><h4>About us</h4></a></li>
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><h4>Courses</h4> </a>
@@ -42,20 +42,46 @@
                           <li class="dropdown-submenu">
                           <a tabindex="-1" href="#" class="dropdown-submenu-toggle "><h4>class 11th</h4> </a>
                           <ul class="dropdown-menu ">
-                            <li><a href="#"><h4>Science</h4></a></li>
-                            <li><a href="#"><h4>Commerce</h4></a></li>
-                            <li><a href="#"><h4>Arts</h4></a></li>
+                            <li><a href="{% url '11th_Science' %}"><h4>Science</h4></a></li>
+                            <li><a href="{% url '11th_Commerce' %}"><h4>Commerce</h4></a></li>
+                            <li><a href="{% url '11th_Humanities' %}"><h4>Arts</h4></a></li>
                           </ul>
+                        </li>
                           <li class="dropdown-submenu">
                           <a tabindex="-1" href="#" class="dropdown-submenu-toggle"><h4>class 12th</h4> </a>
                           <ul class="dropdown-menu ">
-                            <li><a href="#"><h4>Science</h4></a></li>
-                            <li><a href="#"><h4>Commerce</h4></a></li>
-                            <li><a href="#"><h4>Arts</h4></a></li>
+                            <li><a href="{% url '12th_Science' %}"><h4>Science</h4></a></li>
+                            <li><a href="{% url '12th_Commerce' %}"><h4>Commerce</h4></a></li>
+                            <li><a href="{% url '12th_Humanities' %}"><h4>Arts</h4></a></li>
                           </ul>
                           </li>
+                          <li class="dropdown-submenu">
+                          <a tabindex="-1" href="#" class="dropdown-submenu-toggle"><h4>Micro Course</h4> </a>
+                          <ul class="dropdown-menu ">
+                            <li><a href="{% url '9th' %}"><h4>class 9th</h4></a></li>
+                            <li><a href="{% url '10th' %}"><h4>class 10th</h4></a></li>
+                            <li class="dropdown-submenu">
+                            <a tabindex="-1" href="#" class="dropdown-submenu-toggle "><h4>class 11th</h4> </a>
+                            <ul class="dropdown-menu ">
+                              <li><a href="{% url '11th_Science' %}"><h4>Science</h4></a></li>
+                              <li><a href="{% url '11th_Commerce' %}"><h4>Commerce</h4></a></li>
+                              <li><a href="{% url '11th_Humanities' %}"><h4>Arts</h4></a></li>
+                            </ul>
+                          </li>
+                          <li class="dropdown-submenu">
+                          <a tabindex="-1" href="#" class="dropdown-submenu-toggle "><h4>class 12th</h4> </a>
+                          <ul class="dropdown-menu ">
+                            <li><a href="{% url '11th_Science' %}"><h4>Science</h4></a></li>
+                            <li><a href="{% url '11th_Commerce' %}"><h4>Commerce</h4></a></li>
+                            <li><a href="{% url '11th_Humanities' %}"><h4>Arts</h4></a></li>
                           </ul>
                         </li>
+                        </li>
+
+                          </ul>
+                          </li>
+                          <li><li><a href='#'><h4>English Speaking</h4></a></li></li>
+                        </ul>
                           <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><h4>Study Material</h4></a>
                           <ul class="dropdown-menu">
@@ -74,15 +100,15 @@
 
             </div>
       </div>
-</ul>
-</nav>
-<!-- 1st navbar start here -->
-<nav class="navbar navbar-default navbar-fixed-top nav2">
+  </ul>
+  </nav>
+  <!-- 1st navbar start here -->
+  <nav class="navbar navbar-default navbar-fixed-top nav2">
   <div class="container-fluid">
 
 
     <div class="navbar-header">
-       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
+       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar1" aria-expanded="false">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -90,10 +116,10 @@
       </button>
       <a class="navbar-brand" href="#">
 
-        <p><a href="#"><img class="pull-up" src="{% static 'webpages/images/Ekal_logo.png' %}" width='25%' alt='' ></p>
+        <p><a href="{% url 'index' %}"><img class="pull-up" src="{% static 'webpages/images/Ekal_logo.png' %}" width='25%' alt='' ></p>
       </a>
     </a>
-</div>
+  </div>
 
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -101,11 +127,11 @@
 
 
 
-<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+  <div class="collapse navbar-collapse" id="navbar1">
       <ul id='pad'class="nav navbar-nav navbar-left ">
 
         <div class="row">
-          <div class="col-xs-12 col-md-12 ">
+          <div class="col-xs-12 col-md-12 col-lg-12 ">
             <li id='pad' style='margin-left:0px;'><a href="#"><h4><span class="glyphicon glyphicon-search" aria-hidden="true"></span>  Enquiry  Now &nbsp;</h4> </a>
 
 
@@ -113,32 +139,32 @@
     </div>
   </div>
 
-</ul>
+  </ul>
 
-<ul id='pad'class="nav navbar-nav navbar-left ">
-<div class="row">
-  <div class="col-xs-12 col-md-12 ">
-  <li id='pad' style='margin-left:50px;'><a href="#" ><h4><span class="glyphicon glyphicon-user" aria-hidden="true"></span>  Sign In &nbsp;</h4> </a>
+  <ul id='pad'class="nav navbar-nav navbar-left ">
+  <div class="row">
+  <div class="col-xs-12 col-md-12 col-lg-12">
+  <li id='pad' style='margin-left:0px;'><a href="#" ><h4><span class="glyphicon glyphicon-user" aria-hidden="true"></span>  Sign In &nbsp;</h4> </a>
   </li></div>
-</div>
+  </div>
 
-</ul>
-<ul id='pad'class="nav navbar-nav navbar-right ">
-<div class="row">
-  <div class="col-xs-12 col-md-12 "style="padding-right:0px;margin-right:20px;">
+  </ul>
+  <ul id='pad'class="nav navbar-nav navbar-left ">
+  <div class="row">
+  <div class="col-xs-12 col-md-12 col-lg-12"style="padding-right:0px;margin-right:0px;">
   <li id='pad' ><a href="#" ><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>  8130682501 &nbsp; </a>
   </li></div>
-  <div class="col-xs-12 col-md-12 ">
+  <div class="col-xs-12 col-md-12 col-lg-12">
   <li id='pad' ><a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcRzBWVHwwpBgTtmnMDMpQkrrhrZRHZGFhgBxJqMrBmbcdRghJMXzwLJlLtsjzDCJNcqwSLjv" ><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>  EkalShiksha2@gmail.com &nbsp; </a>
   </li></div>
-</div>
+  </div>
 
-</ul>
-</div>
-</div>
+  </ul>
+  </div>
+  </div>
 
 
-</nav>
+  </nav>
 <div class="container">
 
 
@@ -196,8 +222,71 @@
   </div>
 </div>
 
+
+<div class="container">
+<h1 class='para'>Road map to clear your Doubts!!</h1>
+<div class="row">
+  <div class="col-md-1 col-xs-1"></div>
+  <div class="col-md-3 col-xs-3">
+    <div class="jumbotron">
+      <h2 id='smal'>Interact with our counsellor for free </h2>
+    </div>
+  </div>
+  <div class="col-md-1 col-xs-1">
+    <span id='smal_arrow'class='brlarge'></span>
+    <div class="arrow-right"></div>
+  </div>
+  <div class="col-md-3 col-xs-3">
+    <div class="jumbotron">
+      <h2 id='smal'>Get perfect allocation of Mentor</h2>
+    </div>
+  </div>
+  <div class="col-md-1 col-xs-1">
+    <span id='smal_arrow'class='brlarge'></span>
+    <div id="flag"></div>
+  </div>
+  <div class="col-md-3 col-xs-3">
+    <div class="jumbotron">
+      <h2 id='smal'>Get your First Free class with us...</h2>
+
+    </div>
+  </div>
+  </div>
+  <div class="row">
+    <div class="col-md-10 col-xs-10">
+
+  </div>
+  <div class="col-md-1 col-xs-1">
+    <!-- <span id='vertical-space'></span> -->
+    <div class="arrow-down"></div>
+  </div>
+  </div>
+    <div class="row">
+
+      <div class="col-md-5 col-xs-5">
+      <!-- <span id='smal_arrow'></span>
+      <div class="arrow-down"></div> -->
+    </div>
+    <div class="col-md-3 col-xs-3">
+      <div class="jumbotron">
+        <h2 id='smal'>Confirm your Mentor!!!</h2>
+
+      </div>
+    </div>
+    <div class="col-md-1 col-xs-1">
+      <span id='smal_arrow'class='brlarge'></span>
+      <div class="arrow-left"></div>
+    </div>
+    <div class="col-md-3 col-xs-3">
+      <div class="jumbotron">
+        <h2 id='smal'>Confirm your Mentor!!!</h2>
+
+      </div>
+    </div>
   </div>
 </div>
+
+
 <div class="container">
     <section style="height:80px;"></section>
 	<div class="row" style="text-align:center;">

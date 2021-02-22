@@ -24,6 +24,7 @@ crossorigin="anonymous"></script>
 
 </head>
 <body>
+  <!-- 2nd Navbar Starts here-->
   <nav class="navbar navbar-default navbar-fixed-top nav1">
     <div class="container-fluid white" id='Lowerband'>
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
@@ -62,22 +63,22 @@ crossorigin="anonymous"></script>
                         <li class="dropdown-submenu">
                         <a tabindex="-1" href="#" class="dropdown-submenu-toggle"><h4>Micro Course</h4> </a>
                         <ul class="dropdown-menu ">
-                          <li><a href="{% url 'MicroCourse10th' %}"><h4>class 9th</h4></a></li>
-                          <li><a href="{% url 'MicroCourse10th' %}"><h4>class 10th</h4></a></li>
+                          <li><a href="{% url '9th' %}"><h4>class 9th</h4></a></li>
+                          <li><a href="{% url '10th' %}"><h4>class 10th</h4></a></li>
                           <li class="dropdown-submenu">
                           <a tabindex="-1" href="#" class="dropdown-submenu-toggle "><h4>class 11th</h4> </a>
                           <ul class="dropdown-menu ">
-                            <li><a href="{% url 'MicroCourse10th' %}"><h4>Science</h4></a></li>
-                            <li><a href="{% url 'MicroCourse10th' %}"><h4>Commerce</h4></a></li>
-                            <li><a href="{% url 'MicroCourse10th' %}"><h4>Arts</h4></a></li>
+                            <li><a href="{% url '11th_Science' %}"><h4>Science</h4></a></li>
+                            <li><a href="{% url '11th_Commerce' %}"><h4>Commerce</h4></a></li>
+                            <li><a href="{% url '11th_Humanities' %}"><h4>Arts</h4></a></li>
                           </ul>
                         </li>
                         <li class="dropdown-submenu">
                         <a tabindex="-1" href="#" class="dropdown-submenu-toggle "><h4>class 12th</h4> </a>
                         <ul class="dropdown-menu ">
-                          <li><a href="{% url 'MicroCourse10th' %}"><h4>Science</h4></a></li>
-                          <li><a href="{% url 'MicroCourse10th' %}"><h4>Commerce</h4></a></li>
-                          <li><a href="{% url 'MicroCourse10th' %}"><h4>Arts</h4></a></li>
+                          <li><a href="{% url '11th_Science' %}"><h4>Science</h4></a></li>
+                          <li><a href="{% url '11th_Commerce' %}"><h4>Commerce</h4></a></li>
+                          <li><a href="{% url '11th_Humanities' %}"><h4>Arts</h4></a></li>
                         </ul>
                       </li>
                       </li>
@@ -242,12 +243,13 @@ crossorigin="anonymous"></script>
 
   <div class="container">
     <ul class="nav nav-tabs" role="tablist">
-      <li role="presentation" class="active"><a href="#tab1" role="tab" data-toggle="tab"><h2>Mathematics</h2></a></li>
-      <li role="presentation"><a href="#tab2" role="tab" data-toggle="tab"><h2>Science</h2></a></li>
-      <li role="presentation"><a href="#tab3" role="tab" data-toggle="tab"><h2>Social Studies</h2></a></li>
-      <li role="presentation"><a href="#tab4" role="tab" data-toggle="tab"><h2>English</h2></a></li>
-      <li role="presentation"><a href="#tab5" role="tab" data-toggle="tab"><h2>Language Subjects</h2></a></li>
-      <li role="presentation"><a href="#tab6" role="tab" data-toggle="tab"><h2>Coding Classes</h2></a></li>
+      <li role="presentation" class="active"><a href="#tab1" role="tab" data-toggle="tab"><h2>History</h2></a></li>
+      <li role="presentation"><a href="#tab2" role="tab" data-toggle="tab"><h2>Geography</h2></a></li>
+      <li role="presentation"><a href="#tab3" role="tab" data-toggle="tab"><h2>Economics</h2></a></li>
+      <li role="presentation"><a href="#tab4" role="tab" data-toggle="tab"><h2>Sociology</h2></a></li>
+      <li role="presentation"><a href="#tab5" role="tab" data-toggle="tab"><h2>Political Science</h2></a></li>
+      <li role="presentation"><a href="#tab6" role="tab" data-toggle="tab"><h2>Language Subjects</h2></a></li>
+      <li role="presentation"><a href="#tab7" role="tab" data-toggle="tab"><h2>Coding Classes</h2></a></li>
     </ul>
 
 
@@ -294,6 +296,9 @@ The chapter 1 and 2 introduces the child the meaning and concept of Diversity an
       <div role="tabpanel" class="tab-pane" id="tab6">
         <p id='smal'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       </div>
+      <div role="tabpanel" class="tab-pane" id="tab7">
+        <p id='smal'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
     </div>
   </div>
 <!-- Slider starts here -->
@@ -311,7 +316,7 @@ The chapter 1 and 2 introduces the child the meaning and concept of Diversity an
 
   <h1 class="para">Road Map to your success</h1>
   <img src="{% static 'webpages/images/RoadMap.png' %}" width="100%" alt="">
-</div>
+
 <br>
 <div class="jumbotron white" id='Lowerband'>
     <h1 class='para'>Take your free concilling</h1>

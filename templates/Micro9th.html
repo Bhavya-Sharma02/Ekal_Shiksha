@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+<script src="https://bootstrapcreative.com/wp-bc/wp-content/themes/wp-bootstrap/codepen/bootstrapcreative.js?v=7"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="{% static 'webpages/Js/jquery_flipster_min.css' %}">
+  <link rel="stylesheet" href="{% static 'webpages/Js/jquery_flipster.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'webpages/Doubts.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'webpages/Index.css' %}">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Source+Serif+Pro:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+  <!-- <link rel="stylesheet" id="bootstrap-css" type="text/css" href="{% static 'webpages/css/dist/css/bootstrap.min.css' %}" >
+  <link rel="stylesheet" type="text/css" href="{% static 'webpages/css/dist/css/bootstrap.css' %}" >
+
+ <link rel="stylesheet" href="{% static 'webpages/css/dist/css/bootstrap-theme.css' %}" > -->
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+    <title></title>
+
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top nav1">
+      <div class="container-fluid white" id='Lowerband'>
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+         <span class="sr-only">Toggle navigation</span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+       </button>
+  <div class="collapse navbar-collapse" id="navbar">
+        <ul class="nav navbar-nav navbar-left">
+              <li><a href="#"><h4>About us</h4></a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><h4>Courses</h4> </a>
+                        <ul  class="dropdown-menu dropdown-menu">
+                          <li><a href="{% url '6th' %}"><h4>class 6th</h4></a></li>
+                          <li><a href="{% url '7th' %}"><h4>class 7th</h4></a></li>
+                          <li><a href="{% url '8th' %}"><h4>class 8th</h4></a></li>
+                          <li><a href="{% url '9th' %}"><h4>class 9th</h4></a></li>
+                          <li><a href="{% url '10th' %}"><h4>class 10th</h4></a></li>
+                          <li class="dropdown-submenu">
+                          <a tabindex="-1" href="#" class="dropdown-submenu-toggle "><h4>class 11th</h4> </a>
+                          <ul class="dropdown-menu ">
+                            <li><a href="{% url '11th_Science' %}"><h4>Science</h4></a></li>
+                            <li><a href="{% url '11th_Commerce' %}"><h4>Commerce</h4></a></li>
+                            <li><a href="{% url '11th_Humanities' %}"><h4>Arts</h4></a></li>
+                          </ul>
+                        </li>
+                          <li class="dropdown-submenu">
+                          <a tabindex="-1" href="#" class="dropdown-submenu-toggle"><h4>class 12th</h4> </a>
+                          <ul class="dropdown-menu ">
+                            <li><a href="{% url '12th_Science' %}"><h4>Science</h4></a></li>
+                            <li><a href="{% url '12th_Commerce' %}"><h4>Commerce</h4></a></li>
+                            <li><a href="{% url '12th_Humanities' %}"><h4>Arts</h4></a></li>
+                          </ul>
+                          </li>
+                          <li class="dropdown-submenu">
+                          <a tabindex="-1" href="#" class="dropdown-submenu-toggle"><h4>Micro Course</h4> </a>
+                          <ul class="dropdown-menu ">
+                            <li><a href="{% url '9th' %}"><h4>class 9th</h4></a></li>
+                            <li><a href="{% url '10th' %}"><h4>class 10th</h4></a></li>
+                            <li class="dropdown-submenu">
+                            <a tabindex="-1" href="#" class="dropdown-submenu-toggle "><h4>class 11th</h4> </a>
+                            <ul class="dropdown-menu ">
+                              <li><a href="{% url '11th_Science' %}"><h4>Science</h4></a></li>
+                              <li><a href="{% url '11th_Commerce' %}"><h4>Commerce</h4></a></li>
+                              <li><a href="{% url '11th_Humanities' %}"><h4>Arts</h4></a></li>
+                            </ul>
+                          </li>
+                          <li class="dropdown-submenu">
+                          <a tabindex="-1" href="#" class="dropdown-submenu-toggle "><h4>class 12th</h4> </a>
+                          <ul class="dropdown-menu ">
+                            <li><a href="{% url '11th_Science' %}"><h4>Science</h4></a></li>
+                            <li><a href="{% url '11th_Commerce' %}"><h4>Commerce</h4></a></li>
+                            <li><a href="{% url '11th_Humanities' %}"><h4>Arts</h4></a></li>
+                          </ul>
+                        </li>
+                        </li>
+
+                          </ul>
+                          </li>
+                          <li><li><a href='#'><h4>English Speaking</h4></a></li></li>
+                        </ul>
+                          <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><h4>Study Material</h4></a>
+                          <ul class="dropdown-menu">
+                            <li><a href="#"><h4>class 6th</h4></a></li>
+                            <li><a href="#"><h4>class 7th</h4></a></li>
+                            <li><a href="#"><h4>class 8th</h4></a></li>
+                            <li><a href="#"><h4>class 9th</h4></a></li>
+                            <li><a href="#"><h4>class 10th</h4></a></li>
+
+                          </ul>
+                          </li>
+                  <li><a href="#"><h4>Doubt class</h4></a></li>
+                  <li><a href="#"><h4>Competitions</h4></a></li>
+                  <li><a href="#"><h4>Teach with us</h4></a></li>
+                  <li><a href="#"><h4>More</h4></a></li>
+
+            </div>
+      </div>
+  </ul>
+  </nav>
+  <!-- 1st navbar start here -->
+  <nav class="navbar navbar-default navbar-fixed-top nav2">
+  <div class="container-fluid">
+
+
+    <div class="navbar-header">
+       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">
+
+        <p><a href="{% url 'index' %}"><img class="pull-up" src="{% static 'webpages/images/Ekal_logo.png' %}" width='25%' alt='' ></p>
+      </a>
+    </a>
+  </div>
+
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+
+
+
+
+  <div class="collapse navbar-collapse" id="navbar1">
+      <ul id='pad'class="nav navbar-nav navbar-left ">
+
+        <div class="row">
+          <div class="col-xs-12 col-md-12 col-lg-12 ">
+            <li id='pad' style='margin-left:0px;'><a href="#"><h4><span class="glyphicon glyphicon-search" aria-hidden="true"></span>  Enquiry  Now &nbsp;</h4> </a>
+
+
+
+    </div>
+  </div>
+
+  </ul>
+
+  <ul id='pad'class="nav navbar-nav navbar-left ">
+  <div class="row">
+  <div class="col-xs-12 col-md-12 col-lg-12">
+  <li id='pad' style='margin-left:0px;'><a href="#" ><h4><span class="glyphicon glyphicon-user" aria-hidden="true"></span>  Sign In &nbsp;</h4> </a>
+  </li></div>
+  </div>
+
+  </ul>
+  <ul id='pad'class="nav navbar-nav navbar-left ">
+  <div class="row">
+  <div class="col-xs-12 col-md-12 col-lg-12"style="padding-right:0px;margin-right:0px;">
+  <li id='pad' ><a href="#" ><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>  8130682501 &nbsp; </a>
+  </li></div>
+  <div class="col-xs-12 col-md-12 col-lg-12">
+  <li id='pad' ><a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcRzBWVHwwpBgTtmnMDMpQkrrhrZRHZGFhgBxJqMrBmbcdRghJMXzwLJlLtsjzDCJNcqwSLjv" ><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>  EkalShiksha2@gmail.com &nbsp; </a>
+  </li></div>
+  </div>
+
+  </ul>
+  </div>
+  </div>
+
+
+  </nav>
+
+<div class="container">
+
+    <h1>Science Crash Course</h1>
+
+
+
+<!--  <a href="https://github.com/rtpHarry/Bootstrap3-ShowManySlideOneCarousel">this code sample</a>   -->
+<div class="row">
+   <div class="col-md-12">
+      <div class="carousel carousel-showmanymoveone slide" id="carousel-tilenav" data-interval="false">
+         <div class="carousel-inner">
+            <div class="item active">
+               <div class="col-xs-12 col-sm-6 col-md-2 thumbnail">
+                  <a href="#"><img src="http://placehold.it/500/0054A6/fff/&amp;text=1" class="img-responsive"></a>
+                  <p class='para'><b>Matter in our Surroundings Quick Revision</b></p>
+               </div>
+            </div>
+            <div class="item">
+               <div class="col-xs-12 col-sm-6 col-md-2 thumbnail">
+                  <a href="#"><img src="http://placehold.it/500/002d5a/fff/&amp;text=2" class="img-responsive"></a>
+                  <p class='para'><b>Atoms and Molecules Quick Revision</b></p>
+               </div>
+            </div>
+            <div class="item">
+               <div class="col-xs-12 col-sm-6 col-md-2 thumbnail">
+                  <a href="#"><img src="http://placehold.it/500/d6d6d6/333&amp;text=3" class="img-responsive"></a>
+                  <p class='para'><b>Structure of Atoms Quick Revision</b></p>
+               </div>
+            </div>
+            <div class="item">
+               <div class="col-xs-12 col-sm-6 col-md-2 thumbnail">
+                  <a href="#"><img src="http://placehold.it/500/002040/eeeeee&amp;text=4" class="img-responsive"></a>
+                  <p class='para'><b>Food: Where Does It Come From? Quick Revision</b></p>
+               </div>
+            </div>
+            <div class="item">
+               <div class="col-xs-12 col-sm-6 col-md-2 thumbnail">
+                  <a href="#"><img src="http://placehold.it/500/0054A6/fff/&amp;text=5" class="img-responsive"></a>
+                  <p class='para'><b>Food: Where Does It Come From? Quick Revision</b></p>
+               </div>
+            </div>
+            <div class="item">
+               <div class="col-xs-12 col-sm-6 col-md-2 thumbnail">
+                  <a href="#"><img src="http://placehold.it/500/002d5a/fff/&amp;text=6" class="img-responsive"></a>
+               </div>
+            </div>
+            <div class="item">
+               <div class="col-xs-12 col-sm-6 col-md-2 thumbnail">
+                  <a href="#"><img src="http://placehold.it/500/eeeeee&amp;text=7" class="img-responsive"></a>
+                  <p class='para'><b>Food: Where Does It Come From? Quick Revision</b></p>
+               </div>
+            </div>
+            <div class="item">
+               <div class="col-xs-12 col-sm-6 col-md-2 thumbnail">
+                  <a href="#"><img src="http://placehold.it/500/40a1ff/002040&amp;text=8" class="img-responsive"></a>
+                  <p class='para'><b>Food: Where Does It Come From? Quick Revision</b></p>
+               </div>
+            </div>
+         </div>
+         <a class="left carousel-control" href="#carousel-tilenav" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
+         <a class="right carousel-control" href="#carousel-tilenav" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
+      </div>
+   </div>
+</div>
+
+
+</div>
+
+<div class="container">
+
+    <h1>Mathematics Crash Course</h1>
+
+
+
+<!--  <a href="https://github.com/rtpHarry/Bootstrap3-ShowManySlideOneCarousel">this code sample</a>   -->
+<div class="row">
+   <div class="col-md-12">
+      <div class="carousel carousel-showmanymoveone slide" id="carousel-tilenav1" data-interval="false">
+         <div class="carousel-inner">
+            <div class="item active">
+               <div class="col-xs-12 col-sm-6 col-md-2 thumbnail">
+                  <a href="#"><img src="http://placehold.it/500/0054A6/fff/&amp;text=1" class="img-responsive"></a>
+                  <p class='para'><b>Math - HOTS</b></p>
+               </div>
+            </div>
+            <div class="item">
+               <div class="col-xs-12 col-sm-6 col-md-2 thumbnail">
+                  <a href="#"><img src="http://placehold.it/500/002d5a/fff/&amp;text=2" class="img-responsive"></a>
+                  <p class='para'><b>Atoms and Molecules Quick Revision</b></p>
+               </div>
+            </div>
+            <div class="item">
+               <div class="col-xs-12 col-sm-6 col-md-2 thumbnail">
+                  <a href="#"><img src="http://placehold.it/500/d6d6d6/333&amp;text=3" class="img-responsive"></a>
+                  <p class='para'><b>Structure of Atoms Quick Revision</b></p>
+               </div>
+            </div>
+            <div class="item">
+               <div class="col-xs-12 col-sm-6 col-md-2 thumbnail">
+                  <a href="#"><img src="http://placehold.it/500/002040/eeeeee&amp;text=4" class="img-responsive"></a>
+                  <p class='para'><b>Food: Where Does It Come From? Quick Revision</b></p>
+               </div>
+            </div>
+            <div class="item">
+               <div class="col-xs-12 col-sm-6 col-md-2 thumbnail">
+                  <a href="#"><img src="http://placehold.it/500/0054A6/fff/&amp;text=5" class="img-responsive"></a>
+                  <p class='para'><b>Food: Where Does It Come From? Quick Revision</b></p>
+               </div>
+            </div>
+            <div class="item">
+               <div class="col-xs-12 col-sm-6 col-md-2 thumbnail">
+                  <a href="#"><img src="http://placehold.it/500/002d5a/fff/&amp;text=6" class="img-responsive"></a>
+               </div>
+            </div>
+            <div class="item">
+               <div class="col-xs-12 col-sm-6 col-md-2 thumbnail">
+                  <a href="#"><img src="http://placehold.it/500/eeeeee&amp;text=7" class="img-responsive"></a>
+                  <p class='para'><b>Food: Where Does It Come From? Quick Revision</b></p>
+               </div>
+            </div>
+            <div class="item">
+               <div class="col-xs-12 col-sm-6 col-md-2 thumbnail">
+                  <a href="#"><img src="http://placehold.it/500/40a1ff/002040&amp;text=8" class="img-responsive"></a>
+                  <p class='para'><b>Food: Where Does It Come From? Quick Revision</b></p>
+               </div>
+            </div>
+         </div>
+         <a class="left carousel-control" href="#carousel-tilenav1" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
+         <a class="right carousel-control" href="#carousel-tilenav1" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
+      </div>
+   </div>
+</div>
+
+
+</div>
+
+<div class="container">
+    <section style="height:80px;"></section>
+ <div class="row" style="text-align:center;">
+   <h2>Bootstrap Dark Footer UI</h2>
+ </div>
+      <footer class="footer-bs">
+        <div class="row">
+         <div class="col-md-3 footer-brand animated fadeInLeft">
+             <h2>Logo</h2>
+                <p>Suspendisse hendrerit tellus laoreet luctus pharetra. Aliquam porttitor vitae orci nec ultricies. Curabitur vehicula, libero eget faucibus faucibus, purus erat eleifend enim, porta pellentesque ex mi ut sem.</p>
+                <p>© 2014 BS3 UI Kit, All rights reserved</p>
+            </div>
+         <div class="col-md-4 footer-nav animated fadeInUp">
+             <h4>Menu —</h4>
+             <div class="col-md-6">
+                    <ul class="pages">
+                        <li><a href="#">Travel</a></li>
+                        <li><a href="#">Nature</a></li>
+                        <li><a href="#">Explores</a></li>
+                        <li><a href="#">Science</a></li>
+                        <li><a href="#">Advice</a></li>
+                    </ul>
+                </div>
+             <div class="col-md-6">
+                    <ul class="list">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contacts</a></li>
+                        <li><a href="#">Terms & Condition</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+         <div class="col-md-2 footer-social animated fadeInDown">
+             <h4>Follow Us</h4>
+             <ul>
+                 <li><a href="#">Facebook</a></li>
+                 <li><a href="#">Twitter</a></li>
+                 <li><a href="https://www.instagram.com/ekal_shiksha/" target="_blank">Instagram</a></li>
+                 <li><a href="#">Linkdin</a></li>
+                </ul>
+            </div>
+         </div>
+    </footer>
+  </div>
+</body>
+<script src="{% static 'webpages/Js/Test.js' %}">
+
+</script>
+<script src="{% static 'webpages/Js/jquery_flipster_min.js' %}"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+</html>

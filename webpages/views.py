@@ -44,6 +44,24 @@ class Science_12th(CreateView):
     model = student
     form_class = abc
     template_name = 'science_12.html'
+class Commerce_12th(CreateView):
+    model = student
+    form_class = abc
+    template_name = 'commerce_12.html'
+class Commerce_11th(CreateView):
+    model = student
+    form_class = abc
+    template_name = 'commerce_11.html'
+
+class Humanities_12th(CreateView):
+    model = student
+    form_class = abc
+    template_name = 'humanities_12.html'
+
+class Humanities_11th(CreateView):
+    model = student
+    form_class = abc
+    template_name = 'humanities_11.html'
 class Doubts(CreateView):
     model = student
     form_class = abc
@@ -51,7 +69,13 @@ class Doubts(CreateView):
 class MicroCourse9th(CreateView):
     model = student
     form_class = abc
-    template_name = 'MicroCourse6th.html'
+    template_name = 'Micro9th.html'
+
+class MicroCourse10th(CreateView):
+    model = student
+    form_class = abc
+    template_name = 'Micro10th.html'
+
 # def c6(response):
 #     return render(response,'class_6th.html')
 # def c7(response):

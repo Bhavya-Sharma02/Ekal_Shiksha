@@ -1,135 +1,167 @@
 <!DOCTYPE html>
 {% load static %}
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, manimum-scale=1.0, maximum-scale=1.0" />
+  <script
+src="https://code.jquery.com/jquery-3.4.1.js"
+integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+crossorigin="anonymous"></script>
+<script src="{% static 'webpages/Js/Scrolling-tabs.js' %}"></script>
+<link rel="stylesheet" href="{% static 'webpages/Js/jquery_flipster_min.css' %}">
+<link rel="stylesheet" href="{% static 'webpages/Js/jquery_flipster.css' %}">
+<script src="{% static 'webpages/Js/st_demo.js' %}"></script>
+<link rel="stylesheet" href="{% static 'webpages/Scrolling-tabs.css' %}">
+<link rel="stylesheet" href="{% static 'webpages/st_demo.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'webpages/Doubts.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'webpages/Index.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'webpages/css/dist/css/bootstrap.min.css' %}" >
+<link rel="stylesheet" type="text/css" href="{% static 'webpages/css/dist/css/bootstrap.css' %}" >
 
-    <script
-  src="https://code.jquery.com/jquery-3.4.1.js"
-  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-  crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="{% static 'webpages/Js/jquery_flipster_min.css' %}">
-  <link rel="stylesheet" href="{% static 'webpages/Js/jquery_flipster.css' %}">
-  <link rel="stylesheet" type="text/css" href="{% static 'webpages/Index.css' %}">
-  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Source+Serif+Pro:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="{% static 'webpages/css/dist/css/bootstrap.min.css' %}" >
-  <link rel="stylesheet" type="text/css" href="{% static 'webpages/css/dist/css/bootstrap.css' %}" >
+<link rel="stylesheet" href="{% static 'webpages/css/dist/css/bootstrap-theme.css' %}" >
+  <title>Ekal Shiksha</title>
 
-  <link rel="stylesheet" href="{% static 'webpages/css/dist/css/bootstrap-theme.css' %}" >
-    <title></title>
-
-  </head>
-  <body>
-    <!-- 2nd Navbar Starts here-->
-    <nav class="navbar navbar-default navbar-fixed-top nav1">
-      <div class="container-fluid white" id='Lowerband'>
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-         <span class="sr-only">Toggle navigation</span>
-         <span class="icon-bar"></span>
-         <span class="icon-bar"></span>
-         <span class="icon-bar"></span>
-       </button>
-<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav navbar-right">
-              <li><a href="#"><h4>About us</h4></a></li>
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><h4>Courses</h4> </a>
-                        <ul  class="dropdown-menu dropdown-menu">
-                          <li><a href="{% url '6th' %}"><h4>class 6th</h4></a></li>
-                          <li><a href="{% url '7th' %}"><h4>class 7th</h4></a></li>
-                          <li><a href="{% url '8th' %}"><h4>class 8th</h4></a></li>
-                          <li><a href="{% url '9th' %}"><h4>class 9th</h4></a></li>
-                          <li><a href="{% url '10th' %}"><h4>class 10th</h4></a></li>
+</head>
+<body>
+  <!-- 2nd Navbar Starts here-->
+  <nav class="navbar navbar-default navbar-fixed-top nav1">
+    <div class="container-fluid white" id='Lowerband'>
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+       <span class="sr-only">Toggle navigation</span>
+       <span class="icon-bar"></span>
+       <span class="icon-bar"></span>
+       <span class="icon-bar"></span>
+     </button>
+<div class="collapse navbar-collapse" id="navbar">
+      <ul class="nav navbar-nav navbar-left">
+            <li><a href="#"><h4>About us</h4></a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><h4>Courses</h4> </a>
+                      <ul  class="dropdown-menu dropdown-menu">
+                        <li><a href="{% url '6th' %}"><h4>class 6th</h4></a></li>
+                        <li><a href="{% url '7th' %}"><h4>class 7th</h4></a></li>
+                        <li><a href="{% url '8th' %}"><h4>class 8th</h4></a></li>
+                        <li><a href="{% url '9th' %}"><h4>class 9th</h4></a></li>
+                        <li><a href="{% url '10th' %}"><h4>class 10th</h4></a></li>
+                        <li class="dropdown-submenu">
+                        <a tabindex="-1" href="#" class="dropdown-submenu-toggle "><h4>class 11th</h4> </a>
+                        <ul class="dropdown-menu ">
+                          <li><a href="{% url '11th_Science' %}"><h4>Science</h4></a></li>
+                          <li><a href="{% url '11th_Commerce' %}"><h4>Commerce</h4></a></li>
+                          <li><a href="{% url '11th_Humanities' %}"><h4>Arts</h4></a></li>
+                        </ul>
+                      </li>
+                        <li class="dropdown-submenu">
+                        <a tabindex="-1" href="#" class="dropdown-submenu-toggle"><h4>class 12th</h4> </a>
+                        <ul class="dropdown-menu ">
+                          <li><a href="{% url '12th_Science' %}"><h4>Science</h4></a></li>
+                          <li><a href="{% url '12th_Commerce' %}"><h4>Commerce</h4></a></li>
+                          <li><a href="{% url '12th_Humanities' %}"><h4>Arts</h4></a></li>
+                        </ul>
+                        </li>
+                        <li class="dropdown-submenu">
+                        <a tabindex="-1" href="#" class="dropdown-submenu-toggle"><h4>Micro Course</h4> </a>
+                        <ul class="dropdown-menu ">
+                          <li><a href="{% url 'MicroCourse10th' %}"><h4>class 9th</h4></a></li>
+                          <li><a href="{% url 'MicroCourse10th' %}"><h4>class 10th</h4></a></li>
                           <li class="dropdown-submenu">
-                          <a tabindex="-1" href="#" class="dropdown-submenu-toggle" data-toggle="dropdown" role="button"><h4>class 11th</h4> </a>
-                          <ul class="dropdown-menu">
-                            <li><a href="#"><h4>Science</h4></a></li>
-                            <li><a href="#"><h4>Commerce</h4></a></li>
-                            <li><a href="#"><h4>Arts</h4></a></li>
-                          </ul>
-                          <li class="dropdown-submenu">
-                          <a tabindex="-1" href="#" class="dropdown-submenu-toggle" data-toggle="dropdown" role="button"><h4>class 12th</h4> </a>
+                          <a tabindex="-1" href="#" class="dropdown-submenu-toggle "><h4>class 11th</h4> </a>
                           <ul class="dropdown-menu ">
-                            <li><a href="#"><h4>Science</h4></a></li>
-                            <li><a href="#"><h4>Commerce</h4></a></li>
-                            <li><a href="#"><h4>Arts</h4></a></li>
-                          </ul>
-                          </li>
+                            <li><a href="{% url 'MicroCourse10th' %}"><h4>Science</h4></a></li>
+                            <li><a href="{% url 'MicroCourse10th' %}"><h4>Commerce</h4></a></li>
+                            <li><a href="{% url 'MicroCourse10th' %}"><h4>Arts</h4></a></li>
                           </ul>
                         </li>
-                          <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><h4>Study Material</h4></a>
-                          <ul class="dropdown-menu">
-                            <li><a href="#"><h4>class 6th</h4></a></li>
-                            <li><a href="#"><h4>class 7th</h4></a></li>
-                            <li><a href="#"><h4>class 8th</h4></a></li>
-                            <li><a href="#"><h4>class 9th</h4></a></li>
-                            <li><a href="#"><h4>class 10th</h4></a></li>
+                        <li class="dropdown-submenu">
+                        <a tabindex="-1" href="#" class="dropdown-submenu-toggle "><h4>class 12th</h4> </a>
+                        <ul class="dropdown-menu ">
+                          <li><a href="{% url 'MicroCourse10th' %}"><h4>Science</h4></a></li>
+                          <li><a href="{% url 'MicroCourse10th' %}"><h4>Commerce</h4></a></li>
+                          <li><a href="{% url 'MicroCourse10th' %}"><h4>Arts</h4></a></li>
+                        </ul>
+                      </li>
+                      </li>
 
-                          </ul>
-                          </li>
-                  <li><a href="#"><h4>Doubt class</h4></a></li>
-                  <li><a href="#"><h4>Competitions</h4></a></li>
-                  <li><a href="#"><h4>Teach with us</h4></a></li>
-                  <li><a href="#"><h4>More</h4></a></li>
+                        </ul>
+                        </li>
+                        <li><li><a href='#'><h4>English Speaking</h4></a></li></li>
+                      </ul>
+                        <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><h4>Study Material</h4></a>
+                        <ul class="dropdown-menu">
+                          <li><a href="#"><h4>class 6th</h4></a></li>
+                          <li><a href="#"><h4>class 7th</h4></a></li>
+                          <li><a href="#"><h4>class 8th</h4></a></li>
+                          <li><a href="#"><h4>class 9th</h4></a></li>
+                          <li><a href="#"><h4>class 10th</h4></a></li>
 
-            </div>
-      </div>
+                        </ul>
+                        </li>
+                <li><a href="#"><h4>Doubt class</h4></a></li>
+                <li><a href="#"><h4>Competitions</h4></a></li>
+                <li><a href="#"><h4>Teach with us</h4></a></li>
+                <li><a href="#"><h4>More</h4></a></li>
+
+          </div>
+    </div>
 </ul>
 </nav>
 <!-- 1st navbar start here -->
 <nav class="navbar navbar-default navbar-fixed-top nav2">
-  <div class="container-fluid">
+<div class="container-fluid">
 
 
-    <div class="navbar-header">
-       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">
+  <div class="navbar-header">
+     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar1" aria-expanded="false">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="#">
 
-        <p><a href="{% url 'index' %}"><img class="pull-up" src="{% static 'webpages/images/Ekal_logo.png' %}" width='25%' alt='' ></p>
-      </a>
+      <p><a href="{% url 'index' %}"><img class="pull-up" src="{% static 'webpages/images/Ekal_logo.png' %}" width='25%' alt='' ></p>
     </a>
+  </a>
 </div>
 
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
+  <!-- Collect the nav links, forms, and other content for toggling -->
 
 
 
 
-<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
-      <ul id='pad'class="nav navbar-nav navbar-left ">
+<div class="collapse navbar-collapse" id="navbar1">
+    <ul id='pad'class="nav navbar-nav navbar-left ">
 
-        <div class="row">
-          <div class="col-xs-12 col-md-12 ">
+      <div class="row">
+        <div class="col-xs-12 col-md-12 col-lg-12 ">
           <li id='pad' style='margin-left:0px;'><a href="#"><h4><span class="glyphicon glyphicon-search" aria-hidden="true"></span>  Enquiry  Now &nbsp;</h4> </a>
-          </li></div>
-        </div>
+
+
+
+  </div>
+</div>
 
 </ul>
 
 <ul id='pad'class="nav navbar-nav navbar-left ">
 <div class="row">
-  <div class="col-xs-12 col-md-12 ">
-  <li id='pad' style='margin-left:50px;'><a href="#" ><h4><span class="glyphicon glyphicon-user" aria-hidden="true"></span>  Sign In &nbsp;</h4> </a>
-  </li></div>
+<div class="col-xs-12 col-md-12 col-lg-12">
+<li id='pad' style='margin-left:0px;'><a href="#" ><h4><span class="glyphicon glyphicon-user" aria-hidden="true"></span>  Sign In &nbsp;</h4> </a>
+</li></div>
 </div>
 
 </ul>
-<ul id='pad'class="nav navbar-nav navbar-right ">
+<ul id='pad'class="nav navbar-nav navbar-left ">
 <div class="row">
-  <div class="col-xs-12 col-md-12 "style="padding-right:0px;margin-right:20px;">
-  <li id='pad' ><a href="#" ><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>  8130682501 &nbsp; </a>
-  </li></div>
-  <div class="col-xs-12 col-md-12 ">
-  <li id='pad' ><a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcRzBWVHwwpBgTtmnMDMpQkrrhrZRHZGFhgBxJqMrBmbcdRghJMXzwLJlLtsjzDCJNcqwSLjv" ><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>  EkalShiksha2@gmail.com &nbsp; </a>
-  </li></div>
+<div class="col-xs-12 col-md-12 col-lg-12"style="padding-right:0px;margin-right:0px;">
+<li id='pad' ><a href="#" ><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>  8130682501 &nbsp; </a>
+</li></div>
+<div class="col-xs-12 col-md-12 col-lg-12">
+<li id='pad' ><a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcRzBWVHwwpBgTtmnMDMpQkrrhrZRHZGFhgBxJqMrBmbcdRghJMXzwLJlLtsjzDCJNcqwSLjv" ><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>  EkalShiksha2@gmail.com &nbsp; </a>
+</li></div>
 </div>
 
 </ul>
@@ -208,245 +240,62 @@
 
 </div> -->
 <h1 class='para'>Subjects we Offer for your Exellence!!!</h1>
-<div class="container">
+  <div class="container">
+    <ul class="nav nav-tabs" role="tablist">
+      <li role="presentation" class="active"><a href="#tab1" role="tab" data-toggle="tab"><h2>Mathematics</h2></a></li>
+      <li role="presentation"><a href="#tab2" role="tab" data-toggle="tab"><h2>Science</h2></a></li>
+      <li role="presentation"><a href="#tab3" role="tab" data-toggle="tab"><h2>Social Studies</h2></a></li>
+      <li role="presentation"><a href="#tab4" role="tab" data-toggle="tab"><h2>English</h2></a></li>
+      <li role="presentation"><a href="#tab5" role="tab" data-toggle="tab"><h2>Language Subjects</h2></a></li>
+      <li role="presentation"><a href="#tab6" role="tab" data-toggle="tab"><h2>Coding Classes</h2></a></li>
+    </ul>
 
 
-<ul class="nav nav-tabs">
-  <li class="active"><a data-toggle="tab" href="#home"><h2>Mathematics</h2></a></li>
-  <li><a data-toggle="tab" href="#menu1"><h2>Science</h2></a></li>
-  <li><a data-toggle="tab" href="#menu2"><h2>Social Studies</h2></a></li>
-  <li><a data-toggle="tab" href="#menu3"><h2>Language Course</h2></a></li>
-  <li><a data-toggle="tab" href="#menu4"><h2>Coding Classes</h2></a></li>
-  <!-- <li><a data-toggle="tab" href="#menu5"><h2>Grade 7</h2></a></li>
-  <li><a data-toggle="tab" href="#menu6"><h2>Grade 6</h2></a></li> -->
-
-</ul>
-
-<div class="tab-content">
-  <div id="home" class="tab-pane fade in active">
-    <div class="row">
-      <br>
-      <div class="col-xs-1 col-md-1"></div>
-      <div class="col-xs-4 col-md-4">
-        <p id='smal'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      </div>
-      <div class="col-xs-3 col-md-3"></div>
-      <div class="col-xs-3 col-md-3">
-        <!-- <a href="#"><div class="btn-group">
-          <button type="button" class="btn btn-default dropdown-toggle"  aria-haspopup="true" aria-expanded="false">Science &nbsp; &nbsp;</button></a></div>
-          <br>
-          <br>
-        <a href="#"><div class="btn-group">
-          <button type="button" class="btn btn-default dropdown-toggle"  aria-haspopup="true" aria-expanded="false">Commerce</button></a></div>
-          <br>
-          <br>
-        <a href="#"><div class="btn-group">
-          <button type="button" class="btn btn-default dropdown-toggle"  aria-haspopup="true" aria-expanded="false">Humanities</button></a></div>
-          <br>
-          <br> -->
-          <div class="btn-group-md btn-group-vertical">
-              <button type="button" id="pre-reading-btn" class="btn btn-default">English</button>
-              <br>
-              <button type="button" id="passage-btn" class="btn btn-default">IT</button>
-              <br>
-              <button type="button" id="post-reading-btn" class="btn btn-default">Sanskrit</button>
-              <br>
-            </div>
-
-        </div>
-      </div>
-  </div>
-  <div id="menu1" class="tab-pane fade">
-    <h3>Grade 11</h3>
-    <p id='smal'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-  </div>
-  <div id="menu2" class="tab-pane fade">
-    <div class="row">
-      <br>
-      <div class="col-xs-4 col-md-4">
-        <p id='smal'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      </div>
-      <div class="col-xs-2 col-md-2"></div>
-      <div class="col-xs-3 col-md-3">
-        <a href="#"><div class="btn-group">
-          <button type="button" class="btn btn-default block"  aria-haspopup="true" aria-expanded="false">Maths &nbsp; &nbsp;</button></a></div>
-          <br>
-          <br>
-        <a href="#"><div class="btn-group">
-          <button type="button" class="btn btn-default block"  aria-haspopup="true" aria-expanded="false">Science</button></a></div>
-          <br>
-          <br>
-        <a href="#"><div class="btn-group">
-          <button type="button" class="btn btn-default block"  aria-haspopup="true" aria-expanded="false">English</button></a></div>
-          <br>
-          <br>
-        </div>
-        <div class="col-xs-1 col-md-1">
-          <a href="#"><div class="btn-group">
-          <button type="button" class="btn btn-default block"  aria-haspopup="true" aria-expanded="false">IT</button></a></div>
-          <br>
-          <br>
-        <a href="#"><div class="btn-group">
-          <button type="button" class="btn btn-default block"  aria-haspopup="true" aria-expanded="false">SST</button></a></div>
-          <br>
-          <br>
-        <a href="#"><div class="btn-group">
-          <button type="button" class="btn btn-default block"  aria-haspopup="true" aria-expanded="false">Sanskrit</button></a></div>
-          <br>
-          <br>
-        </div>
-  </div>
+    <div class="tab-content">
+      <div role="tabpanel" class="tab-pane active" id="tab1">
+        <br>
+          <div class="item">
+              <p id='smal' style="padding-top:4%;">Mathematics play important role in day to day life. It helps in developing logical reasoning, abstract thinking and imagination. The textbook helps in developing a thinking to understand the arguments and capacity to make interrelations among the concepts.
+The beginning of mathematics in 6th standard is initiated by testing the previous knowledge of child about numbers, their multiplication, division, number names, patterns, etc. It introduces  to difference between digits and the numbers, place value system. Further the understanding of the child is developed using different measuring units. Process and applications of Estimation has been described to a student in such a way that they can relate it to daily life examples. Properties of whole numbers helps students to understand the mathematical operations in a better way. Divisibility tests and concept of HCF and LCM is developed in a better way. The book also introduces the basic knowledge about angles, lines and how a shape depends upon these factors. Symmetry is also included recalling the previous knowledge. Knowledge about negative numbers have been initiated in 6th standard which is further developed with fractions and decimals where the child learns about what are different forms of numbers and how to deal with them. Area and Perimeter is explained with the help of things surrounding the child’s life. Differences in basic concepts like fraction and ratio are explained.
+The textbook guides teachers as well as students to understand the concept, reason behind the process rather than just memorizing it. Many opportunities are provided in textbook where child will be verifying principles or patterns</p>
 </div>
-  <div id="menu3" class="tab-pane fade">
-    <div class="row">
-      <br>
-      <div class="col-xs-4 col-md-4">
+
+      </div>
+      <div role="tabpanel" class="tab-pane" id="tab2">
+        <br>
+        <div class="item">
+            <p id='smal' style="padding-top:4%;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+    </div>
+      <div role="tabpanel" class="tab-pane" id="tab3">
+        <div class="item">
+          <p id='smal' style="padding-top:4%;"><Strong><h3>Geography – The Earth Our Habitat</h3></Strong> <br>
+In chapter 1 The Earth in Our Solar System a child learns about the sun, planets, and some celestial bodies that form the solar system. In chapter 2 the child becomes familiar with the Globe latitudes and longitudes. In chapter 3 meaning of rotation and revolution is give and the child learns about Motions of Earth.  Chapter 4 describes about the need and use of maps. In chapter 5 The Domains of Earth and in Chapter 6 The Landforms of Earth are explained. Chapter 7 and 8 focus on location, climate, vegetation and wildlife of India.
+<br>
+<Strong><h3>History -Our Past</h3></Strong><br>I
+Chapter 1 answers the questions of What, where, how and when about the past. In chapter 2 evolution of humans in explained from being hunters and gatherers to growing food on their own. The chapter 3 informs about the establishment of the Earliest Cities. Chapter 4 talks about an important source of history The Books and the Burials which helps us to know more about the past. The next chapter tells about the Kingdoms, Kings, and an Early Republic. It explains about the administrative system in past. Chapter 6 concentrates on the new questions and the ideas that prevailed in the past related to religion, language etc. chapter 7 is based on the story of a Great Emperor Ashoka and his Empire. Chapter focuses on establishment of Vital Villages and Thriving Towns. The next chapter discusses about establishment of trade, traders the kings and the pilgrims. Chapter 10 and 11 are based upon the New Empires and Kingdoms and the buildings, paintings and books of that period.
+All the chapters contain a short text, story line which will a help child to relate all the concepts of past with the present time. It will help them to understand how things were in past and how they have changed now.
+<br>
+<Strong><h3>Social and Political Life</h3></Strong><br> I
+The chapter 1 and 2 introduces the child the meaning and concept of Diversity and the Discrimination people have to face.  Chapter 3 and 4 focuses on the meaning of Government and the key elements of Democratic Government. Chapter 5 is based on Panchayati Raj. In further chapters the child learns about the differences in livelihood and administration of Rural and Urban Areas</p>
+        </div>
+      </div>
+
+      <div role="tabpanel" class="tab-pane" id="tab4">
+        <br>
+          <p id='smal'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+
+
+
+      <div role="tabpanel" class="tab-pane" id="tab5">
         <p id='smal'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       </div>
-      <div class="col-xs-2 col-md-2"></div>
-      <div class="col-xs-3 col-md-3">
-        <a href="#"><div class="btn-group">
-          <button type="button" class="btn btn-default block"  aria-haspopup="true" aria-expanded="false">Maths &nbsp; &nbsp;</button></a></div>
-          <br>
-          <br>
-        <a href="#"><div class="btn-group">
-          <button type="button" class="btn btn-default block"  aria-haspopup="true" aria-expanded="false">Science</button></a></div>
-          <br>
-          <br>
-        <a href="#"><div class="btn-group">
-          <button type="button" class="btn btn-default block"  aria-haspopup="true" aria-expanded="false">English</button></a></div>
-          <br>
-          <br>
-        </div>
-        <div class="col-xs-1 col-md-1">
-          <a href="#"><div class="btn-group">
-          <button type="button" class="btn btn-default block"  aria-haspopup="true" aria-expanded="false">IT</button></a></div>
-          <br>
-          <br>
-        <a href="#"><div class="btn-group">
-          <button type="button" class="btn btn-default block"  aria-haspopup="true" aria-expanded="false">SST</button></a></div>
-          <br>
-          <br>
-        <a href="#"><div class="btn-group">
-          <button type="button" class="btn btn-default block"  aria-haspopup="true" aria-expanded="false">Sanskrit</button></a></div>
-          <br>
-          <br>
-        </div>
-  </div>
-  </div>
-  <div id="menu4" class="tab-pane fade">
-    <div class="row">
-      <br>
-      <div class="col-xs-4 col-md-4">
+      <div role="tabpanel" class="tab-pane" id="tab6">
         <p id='smal'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       </div>
-      <div class="col-xs-2 col-md-2"></div>
-      <div class="col-xs-3 col-md-3">
-        <a href="#"><div class="btn-group">
-          <button type="button" class="btn btn-default block"  aria-haspopup="true" aria-expanded="false">Maths &nbsp; &nbsp;</button></a></div>
-          <br>
-          <br>
-        <a href="#"><div class="btn-group">
-          <button type="button" class="btn btn-default block"  aria-haspopup="true" aria-expanded="false">Science</button></a></div>
-          <br>
-          <br>
-        <a href="#"><div class="btn-group">
-          <button type="button" class="btn btn-default block"  aria-haspopup="true" aria-expanded="false">English</button></a></div>
-          <br>
-          <br>
-        </div>
-        <div class="col-xs-1 col-md-1">
-          <a href="#"><div class="btn-group">
-          <button type="button" class="btn btn-default block"  aria-haspopup="true" aria-expanded="false">IT</button></a></div>
-          <br>
-          <br>
-        <a href="#"><div class="btn-group">
-          <button type="button" class="btn btn-default block"  aria-haspopup="true" aria-expanded="false">SST</button></a></div>
-          <br>
-          <br>
-        <a href="#"><div class="btn-group">
-          <button type="button" class="btn btn-default block"  aria-haspopup="true" aria-expanded="false">Sanskrit</button></a></div>
-          <br>
-          <br>
-        </div>
+    </div>
   </div>
-  </div>
-  <div id="menu5" class="tab-pane fade">
-    <div class="row">
-      <br>
-      <div class="col-xs-4 col-md-4">
-        <p id='smal'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      </div>
-      <div class="col-xs-2 col-md-2"></div>
-      <div class="col-xs-3 col-md-3">
-        <a href="#"><div class="btn-group">
-          <button type="button" class="btn btn-default block"  aria-haspopup="true" aria-expanded="false">Maths &nbsp; &nbsp;</button></a></div>
-          <br>
-          <br>
-        <a href="#"><div class="btn-group">
-          <button type="button" class="btn btn-default block"  aria-haspopup="true" aria-expanded="false">Science</button></a></div>
-          <br>
-          <br>
-        <a href="#"><div class="btn-group">
-          <button type="button" class="btn btn-default block"  aria-haspopup="true" aria-expanded="false">English</button></a></div>
-          <br>
-          <br>
-        </div>
-        <div class="col-xs-1 col-md-1">
-          <a href="#"><div class="btn-group">
-          <button type="button" class="btn btn-default block"  aria-haspopup="true" aria-expanded="false">IT</button></a></div>
-          <br>
-          <br>
-        <a href="#"><div class="btn-group">
-          <button type="button" class="btn btn-default block"  aria-haspopup="true" aria-expanded="false">SST</button></a></div>
-          <br>
-          <br>
-        <a href="#"><div class="btn-group">
-          <button type="button" class="btn btn-default block"  aria-haspopup="true" aria-expanded="false">Sanskrit</button></a></div>
-          <br>
-          <br>
-        </div>
-  </div>
-  </div>
-  <div id="menu6" class="tab-pane fade">
-    <div class="row">
-      <br>
-      <div class="col-xs-4 col-md-4">
-        <p id='smal'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      </div>
-      <div class="col-xs-2 col-md-2"></div>
-      <div class="col-xs-3 col-md-3">
-        <a href="#"><div class="btn-group">
-          <button type="button" class="btn btn-default block"  aria-haspopup="true" aria-expanded="false">Maths &nbsp; &nbsp;</button></a></div>
-          <br>
-          <br>
-        <a href="#"><div class="btn-group">
-          <button type="button" class="btn btn-default block"  aria-haspopup="true" aria-expanded="false">Science</button></a></div>
-          <br>
-          <br>
-        <a href="#"><div class="btn-group">
-          <button type="button" class="btn btn-default block"  aria-haspopup="true" aria-expanded="false">English</button></a></div>
-          <br>
-          <br>
-        </div>
-        <div class="col-xs-1 col-md-1">
-          <a href="#"><div class="btn-group">
-          <button type="button" class="btn btn-default block"  aria-haspopup="true" aria-expanded="false">IT</button></a></div>
-          <br>
-          <br>
-        <a href="#"><div class="btn-group">
-          <button type="button" class="btn btn-default block"  aria-haspopup="true" aria-expanded="false">SST</button></a></div>
-          <br>
-          <br>
-        <a href="#"><div class="btn-group">
-          <button type="button" class="btn btn-default block"  aria-haspopup="true" aria-expanded="false">Sanskrit</button></a></div>
-          <br>
-          <br>
-        </div>
-  </div>
-  </div>
-</div>
-</div>
 <!-- Slider starts here -->
 <br>
 <h1 class='para'>What we have for your child...</h1>
@@ -527,7 +376,7 @@
 <br>
 <div class="jumbotron white" id='Lowerband'>
     <h1 class='para'>Take your free concilling</h1>
-    <div class="row">
+    <div class="row" style='margin-right:0px;'>
       <div class="col-xs-4 col-lg-5"></div>
       <div class="col-xs-4 col-lg-5">
         <a href="#">
