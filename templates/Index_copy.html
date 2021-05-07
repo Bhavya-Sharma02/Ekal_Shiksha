@@ -3,6 +3,8 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="description" content="Ekal Shiksha is an Ed-tech company which provides one on one individual online classes. It is an initiative which aims to revolutionize the standard teaching and learning methods.">
+
     <meta name="viewport" content="width=device-width, manimum-scale=1.0, maximum-scale=1.0" />
     <script
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -16,6 +18,9 @@
   <link rel="stylesheet" type="text/css" href="{% static 'webpages/Index.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'webpages/css/dist/css/bootstrap.min.css' %}" >
     <link rel="stylesheet" type="text/css" href="{% static 'webpages/css/dist/css/bootstrap.css' %}" >
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,700;1,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Sofia&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="{% static 'webpages/css/dist/css/bootstrap-theme.css' %}" >
     <title>Ekal Shiksha</title>
@@ -33,10 +38,11 @@
        </button>
   <div class="collapse navbar-collapse" id="navbar">
         <ul class="nav navbar-nav navbar-left">
-              <li><a href="#"><h4>About us</h4></a></li>
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><h4>Courses</h4> </a>
+              <li><a href="#"><h4 style="font-family: crimson text; font-size: 150%">About us</h4></a></li>
+              <li class="dropdown hscroll">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><h4 style="font-family: crimson text; font-size: 150%">Courses</h4> </a>
                         <ul  class="dropdown-menu dropdown-menu">
+
                           <li><a href="{% url '6th' %}"><h4>class 6th</h4></a></li>
                           <li><a href="{% url '7th' %}"><h4>class 7th</h4></a></li>
                           <li><a href="{% url '8th' %}"><h4>class 8th</h4></a></li>
@@ -58,14 +64,14 @@
                             <li><a href="{% url '12th_Humanities' %}"><h4>Arts</h4></a></li>
                           </ul>
                           </li>
-                          <li class="dropdown-submenu">
+                          <li class="dropdown-submenu hscroll">
                           <a tabindex="-1" href="#" class="dropdown-submenu-toggle"><h4>Micro Course</h4> </a>
-                          <ul class="dropdown-menu ">
+                          <ul class="dropdown-menu hscroll">
                             <li><a href="{% url 'MicroCourse9th' %}"><h4>class 9th</h4></a></li>
                             <li><a href="{% url 'MicroCourse10th' %}"><h4>class 10th</h4></a></li>
-                            <li class="dropdown-submenu">
+                            <li class="dropdown-submenu hscroll">
                             <a tabindex="-1" href="#" class="dropdown-submenu-toggle "><h4>class 11th</h4> </a>
-                            <ul class="dropdown-menu ">
+                            <ul class="dropdown-menu hscroll">
                               <li><a href="{% url 'MicroCourse10th' %}"><h4>Science</h4></a></li>
                               <li><a href="{% url 'MicroCourse10th' %}"><h4>Commerce</h4></a></li>
                               <li><a href="{% url 'MicroCourse10th' %}"><h4>Arts</h4></a></li>
@@ -86,7 +92,7 @@
                           <li><li><a href='#'><h4>English Speaking</h4></a></li></li>
                         </ul>
                           <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><h4>Study Material</h4></a>
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><h4 style="font-family: crimson text; font-size: 150%">Study Material</h4></a>
                           <ul class="dropdown-menu">
                             <li><a href="#"><h4>class 6th</h4></a></li>
                             <li><a href="#"><h4>class 7th</h4></a></li>
@@ -111,10 +117,10 @@
                           </li>
                           </ul>
                           </li>
-                  <li><a href="{% url 'Doubts' %}"><h4>Doubt class</h4></a></li>
-                  <li><a href="#"><h4>Competitions</h4></a></li>
-                  <li><a href="#"><h4>Teach with us</h4></a></li>
-                  <li><a href="#"><h4>More</h4></a></li>
+                  <li><a href="{% url 'Doubts' %}"><h4 style="font-family: crimson text; font-size: 150%">Doubt class</h4></a></li>
+                  <li><a href="#"><h4 style="font-family: crimson text; font-size: 150%">Competitions</h4></a></li>
+                  <li><a href="#"><h4 style="font-family: crimson text; font-size: 150%">Teach with us</h4></a></li>
+                  <li><a href="#"><h4 style="font-family: crimson text; font-size: 150%">More</h4></a></li>
 
             </div>
       </div>
@@ -170,10 +176,10 @@
   <ul id='pad'class="nav navbar-nav navbar-left ">
   <div class="row">
   <div class="col-xs-12 col-md-12 col-lg-12"style="padding-right:0px;margin-right:0px;">
-  <li id='pad' ><a href="#" ><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>  8130682501 &nbsp; </a>
+  <li id='pad' ><a href="tel:9716864415"><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>  9716864415 &nbsp; </a>
   </li></div>
   <div class="col-xs-12 col-md-12 col-lg-12">
-  <li id='pad' ><a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcRzBWVHwwpBgTtmnMDMpQkrrhrZRHZGFhgBxJqMrBmbcdRghJMXzwLJlLtsjzDCJNcqwSLjv" ><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>  EkalShiksha2@gmail.com &nbsp; </a>
+  <li id='pad' ><a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcRzBWVHwwpBgTtmnMDMpQkrrhrZRHZGFhgBxJqMrBmbcdRghJMXzwLJlLtsjzDCJNcqwSLjv" ><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>  Contact@ekalshiksha.com &nbsp; </a>
   </li></div>
   </div>
 
@@ -188,7 +194,7 @@
   <br>
   <div class="row">
       <div class="col-xs-7 col-md-7">
-        <img src="{% static 'webpages/images/Copy_of_Add_a_heading__3_-removebg-preview.png' %}" width="100%" height="100%" alt="">
+        <img src="{% static 'webpages/images/Copy_of_Add_a_heading__3_-removebg-preview.png' %}" width="115%" alt="">
 
       </div>
       <div class="col-xs-5 col-md-5">
@@ -203,10 +209,10 @@
   </div>
 
   <div class="row">
-    <div class="col-md-8 col-xs-8"></div>
-    <div class="col-md-4 col-xs-4">
+    <div class="col-md-8 col-xs-7"></div>
+    <div class="col-md-4 col-xs-5" style='padding-bottom:1%;'>
 
-    <button type="button" class="btn btn-primary" aria-haspopup="true" aria-expanded="false"data-toggle="modal" data-target="#myModal"><h4 id='smal'>Book your Free<br>Individual class</h4></button></div> </h1></button>
+    <button type="button" class="btn btn-primary" aria-haspopup="true" aria-expanded="false"data-toggle="modal" data-target="#myModal" id='smal'>Book your Free Individual<br>class</button></div> </h1></button>
     <div class="modal fade" id="myModal" role="dialog">
       <div class="modal-dialog">
 
@@ -249,7 +255,7 @@
 <br>
 <!-- Need for individual classes -->
   <div class="container">
-    <h1 class='para'><Strong>Perks of Individual Classes</Strong></h1>
+    <h1 class='para'><Strong style="font-family: crimson text; font-size: 150%">Perks of Individual Classes</Strong></h1>
     <br>
     <div class="row">
 
@@ -279,7 +285,7 @@
         </div>
         <div class="col-xs-4 col-md-4 thumbnail">
           <a onclick=" $( ' #myCarousel ').carousel( 3 );" href='#myCarousel'><img src="{% static 'webpages/images/Interaction_Understanding.png' %}"></a>
-          <p id ='smal' class='para'>Better understanding <br>with Teachers</p>
+          <p id ='smal' class='para'>Better understanding</p>
         </div>
         <div class="col-xs-2 col-md-2 thumbnail"></div>
       </div>
@@ -305,13 +311,13 @@
 <!-- Grade System -->
   <div class="container">
     <ul class="nav nav-tabs" role="tablist">
-      <li role="presentation" class="active"><a href="#tab1" role="tab" data-toggle="tab"><h2>Grade 12</h2></a></li>
-      <li role="presentation"><a href="#tab2" role="tab" data-toggle="tab"><h2>Grade 11</h2></a></li>
-      <li role="presentation"><a href="#tab3" role="tab" data-toggle="tab"><h2>Grade 10</h2></a></li>
-      <li role="presentation"><a href="#tab4" role="tab" data-toggle="tab"><h2>Grade 9</h2></a></li>
-      <li role="presentation"><a href="#tab5" role="tab" data-toggle="tab"><h2>Grade 8</h2></a></li>
-      <li role="presentation"><a href="#tab6" role="tab" data-toggle="tab"><h2>Grade 7</h2></a></li>
-      <li role="presentation"><a href="#tab7" role="tab" data-toggle="tab"><h2>Grade 6</h2></a></li>
+      <li role="presentation" class="active"><a href="#tab1" role="tab" data-toggle="tab"><h2 style="font-family: crimson text; font-size: 250%">Grade 12</h2></a></li>
+      <li role="presentation"><a href="#tab2" role="tab" data-toggle="tab"><h2 style="font-family: crimson text; font-size: 250%">Grade 11</h2></a></li>
+      <li role="presentation"><a href="#tab3" role="tab" data-toggle="tab"><h2 style="font-family: crimson text; font-size: 250%">Grade 10</h2></a></li>
+      <li role="presentation"><a href="#tab4" role="tab" data-toggle="tab"><h2 style="font-family: crimson text; font-size: 250%">Grade 9</h2></a></li>
+      <li role="presentation"><a href="#tab5" role="tab" data-toggle="tab"><h2 style="font-family: crimson text; font-size: 250%">Grade 8</h2></a></li>
+      <li role="presentation"><a href="#tab6" role="tab" data-toggle="tab"><h2 style="font-family: crimson text; font-size: 250%">Grade 7</h2></a></li>
+      <li role="presentation"><a href="#tab7" role="tab" data-toggle="tab"><h2 style="font-family: crimson text; font-size: 250%">Grade 6</h2></a></li>
 
     </ul>
 
@@ -320,36 +326,44 @@
       <div role="tabpanel" class="tab-pane active" id="tab1">
         <br>
 
-            <p id='smal'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p id='smal'> <h3 style="font-family: crimson text; font-size: 200%">Science</h3> <p style="font-family: cursive; font-size: 120%">As we all know CBSE class 12 science board exam puts a student into a do or die situation. The books are written in a simple yet exhaustive manner. Maintaining an easy and smooth understanding of each advanced concept is important. Scoring well in board exams will boost up the confidence and morale of the students. Every college in the country ...<a href="{% url '12th_Science' %}">read more</a> </p>
+            <p id='smal'> <h3 style="font-family: crimson text; font-size: 200%">Commerce</h3><p style="font-family: cursive; font-size: 120%">CBSE class 12 commerce is entirely based on the concepts that a student had studied in class 11 in a broader aspect. Still, many students face some sort of difficulty in adapting themselves to the increased syllabus and feel frustrated for their Class 12 CBSE board exams. To master any of the specific subjects, a student needs personalised classes ...<a href="{% url '12th_Commerce' %}">read more</a> </p>
+            <p id='smal'> <h3  style="font-family: crimson text; font-size: 200%">Humanities</h3> <p style="font-family: cursive; font-size: 120%">In CBSE class 12 humanities, most students take this stream very lightly because all the subjects are theoretical. However, one should understand every topic very properly so that they can properly present their answers to the examiner. Also, presentation skills should be A1 to ensure good marks by the examiner.
+In the current scenario, Humanities has become an important stream, as it offers a ...<a href="{% url '12th_Humanities' %}">read more</a> </p></p>
 
       </div>
       <div role="tabpanel" class="tab-pane" id="tab2">
         <br>
 
-            <p id='smal'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p id='smal'> <h3 style="font-family: crimson text; font-size: 200%">Science</h3> <p style="font-family: cursive; font-size: 120%">The syllabus of CBSE Class 11 is considered as a foundation for CBSE Class 12 board exams. The stronger the foundation, the better will be the performance in the CBSE board examinations. After having studied diverse subjects throughout your school life, now in CBSE class 11 Science, the real efforts begin. Though students are familiar with Physics, Chemistry and Biology in the earlier classes ...<a href="{% url '11th_Science' %}">read more</a> </p>
+            <p id='smal'> <h3 style="font-family: crimson text; font-size: 200%">Commerce</h3> <p style="font-family: cursive; font-size: 120%">CBSE Class 11 commerce offers completely new concepts to the students which they have never learned before. In this, a student is introduced to the basics of Accountancy, Business Studies and Economics. Here, students face some difficulties due to the arrival of new subjects and the loss of 3 months due to delayed Class X board results. Since CBSE Class 11 is considered to be the foundation ...<a href="{% url '11th_Commerce' %}">read more</a> </p>
+            <p id='smal'> <h3 style="font-family: crimson text; font-size: 200%">Humanities</h3> <p style="font-family: cursive; font-size: 120%">Many students pursue arts with an assumption in mind that it is the easiest among the three streams. However, this is far from the truth. You might see yourself as a troublemaker if you don’t put your best into this stream as well. Humanities offer the student exposure to the core subjects such as History, Economics, Political Science and Geography. All of these subjects are based on theoretical learning and require a lot of memory to retain. Humanities bring out a pool ...<a href="{% url '11th_Humanities' %}">read more</a> </p>
+
       </div>
       <div role="tabpanel" class="tab-pane" id="tab3">
 
           <br>
 
-            <p id='smal'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p id='smal' style="font-family: cursive; font-size: 120%">CBSE class 10 board exams are crucial for the students as every single concept plays a vital role in making a successful individual. It carries an opportunity for progress. Understanding each topic is crucial for strengthening the fundamental knowledge that is hidden in each concept. Moreover, class 10 signifies a student’s academic achievements. Based on the academic results of Class 10 Board examinations, students can decide whether they should go for Science, Commerce or Humanities.<br> Also, many reputed universities of the world ...<a href={% url '10th' %}>read more</a></p>
           </div>
 
       <div role="tabpanel" class="tab-pane" id="tab4">
         <br>
-          <p id='smal'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p id='smal' style="font-family: cursive; font-size: 120%">CBSE class 9 acts as a turning point in the life of a school student that one should not overlook as it offers the conceptual background for class 10, class 11 and class 12 simultaneously. This grade will help a student maintain a strong understructure for the class 10 CBSE board if understood well. Many students ignore this and end up regretting it. Apart from that, most topics which are covered in class 9 will be coming in the competitive exams in a detailed manner. So, students should focus now ... <a href={% url '8th' %}>read more</a></p>
         </div>
 
 
 
       <div role="tabpanel" class="tab-pane" id="tab5">
-        <p id='smal'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p id='smal' style="font-family: cursive; font-size: 120%">CBSE Class 8 is the ultimate chapter of a student’s middle schooling where the students suddenly face an immense increase in the syllabus and end up feeling pressured. The arrival of the new topics adds worry and perplexment to both students and their parents. Before stepping into high school, good command over the concepts is necessary for them for achieving their goals in an accelerated way. Apart from just academics, mental preparation ... <a href={% url '8th' %}>read more</a></p>
       </div>
       <div role="tabpanel" class="tab-pane" id="tab6">
-        <p id='smal'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p id='smal' style="font-family: cursive; font-size: 120%">CBSE Class 7 broadly covers up all the fundamentals and conceptions that a student had covered up in the first year of his middle school. All the textbooks of this grade focus on developing student’s interest in the core subjects such as physics, biology and chemistry as they consider these burdensome. These subjects are going to be covered broadly in the later classes. The concepts that are being taught in this grade are considered as the educational walls which support the learning avenue of students. Emphasis on a complete set ...<a href={% url '7th' %}>read more</a> </p>
       </div>
       <div role="tabpanel" class="tab-pane" id="tab7">
-        <p id='smal'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <br>
+        <p id='smal' style="font-family: cursive; font-size: 120%">CBSE Class 6 marks a significant step in the learning path of a student’s school life as this grade acts as the foundation for the upcoming years of a student’s school life. A strong foundation can pave their ways for the future that will help them in raising much higher with confidence. There is always a sense of fear in the minds of the children regarding the hefty syllabus that they came across. But once the students are focused, no one can stop them from achieving greatness.
+Here, children are being taught how they can do an ... <a href={% url '6th' %}>read more</a> </p>
       </div>
     </div>
   </div>
@@ -530,7 +544,7 @@
   </div> -->
 
 
-  <h1 class='para'><strong>Why Choose Ekal Shiksha?</h1>
+  <h1 class='para'><strong style="font-family: crimson text; font-size: 150%">Why Choose Ekal Shiksha?</h1>
     <br>
       <div id="myCarousel" class="carousel slide" data-ride="carousel">
         <!-- Indicators -->
@@ -547,25 +561,25 @@
         <!-- Wrapper for slides -->
         <div class="carousel-inner">
           <div class="item active">
-          <a href="#"><img src="{% static 'webpages/images/SL1.jpeg' %}" style='width:100%;'alt="Los Angeles" ></a>
+          <a href="#"><img src="{% static 'webpages/images/SL1.jpeg' %}" style='width:100%;'alt="" ></a>
           </div>
           <div class="item">
-          <a href="#">  <img src="{% static 'webpages/images/SL2.jpeg' %}"style='width:100%;' alt="Los Angeles" ></a>
+          <a href="#">  <img src="{% static 'webpages/images/SL2.jpeg' %}"style='width:100%;' alt="" ></a>
           </div>
           <div class="item">
-          <a href="#">  <img src="{% static 'webpages/images/SL3.jpeg' %}" style='width:100%;'alt="Los Angeles" ></a>
+          <a href="#">  <img src="{% static 'webpages/images/SL3.jpeg' %}" style='width:100%;'alt="" ></a>
           </div>
           <div class="item">
-          <a href="#">  <img src="{% static 'webpages/images/SL4.jpeg' %}"style='width:100%;' alt="Los Angeles" ></a>
+          <a href="#">  <img src="{% static 'webpages/images/SL4.jpeg' %}"style='width:100%;' alt="" ></a>
           </div>
           <div class="item">
-          <a href="#">  <img src="{% static 'webpages/images/SL5.jpeg' %}" style='width:100%;'alt="Los Angeles" ></a>
+          <a href="#">  <img src="{% static 'webpages/images/SL5.jpeg' %}" style='width:100%;'alt="" ></a>
           </div>
           <div class="item">
-          <a href="#">  <img src="{% static 'webpages/images/SL6.jpeg' %}" style='width:100%;'alt="Los Angeles" ></a>
+          <a href="#">  <img src="{% static 'webpages/images/SL6.jpeg' %}" style='width:100%;'alt="" ></a>
           </div>
           <div class="item">
-          <a href="#">  <img src="{% static 'webpages/images/SL7.jpeg' %}" style='width:100%;'alt="Los Angeles" ></a>
+          <a href="#">  <img src="{% static 'webpages/images/SL7.jpeg' %}" style='width:100%;'alt="" ></a>
           </div>
         </div>
 
@@ -583,7 +597,7 @@
       <br>
 
   <div id='Lowerband'class="jumbotron white">
-    <h2 class='para'><b>Get your Personalized Learning Recommendation<br>Interact with our counsellor</h2></b>
+    <h2 class='para' ><b>Get your Personalized Learning Recommendation<br>Interact with our counsellor</h2></b>
     <!-- <div class="btn-group" > -->
 
     <div class="row" style='margin-right:0px;'>
@@ -654,7 +668,7 @@
           <div class="item active">
 
             <div class="col-xs-5">
-          <a href="#">  <img src="{% static 'webpages/images/1.png' %}" alt="Los Angeles" style="width:100%;"></a>
+          <a href="#">  <img src="{% static 'webpages/images/1.png' %}" alt="" style="width:100%;"></a>
           </div>
           <div class="col-xs-2">  </div>
           <div class="col-xs-5">
@@ -665,21 +679,21 @@
 
           <div class="item">
             <div class="col-xs-5">
-          <a href="#">  <img src="{% static 'webpages/images/3.png' %}" alt="Los Angeles" style="width:100%;"></a>
+          <a href="#">  <img src="{% static 'webpages/images/3.png' %}" alt="" style="width:100%;"></a>
           </div>
           <div class="col-xs-2">  </div>
           <div class="col-xs-5">
-        <a href="#">  <img src="{% static 'webpages/images/4.png' %}" alt="Los Angeles" style="width:100%;"></a>
+        <a href="#">  <img src="{% static 'webpages/images/4.png' %}" alt="" style="width:100%;"></a>
         </div>
           </div>
 
           <div class="item">
             <div class="col-xs-5">
-          <a href="#">  <img src="{% static 'webpages/images/5.png' %}" alt="Los Angeles" style="width:100%;"></a>
+          <a href="#">  <img src="{% static 'webpages/images/5.png' %}" alt="" style="width:100%;"></a>
           </div>
           <div class="col-xs-2">  </div>
           <div class="col-xs-5">
-        <a href="#">  <img src="{% static 'webpages/images/6.png' %}" alt="Los Angeles" style="width:100%;"></a>
+        <a href="#">  <img src="{% static 'webpages/images/6.png' %}" alt="" style="width:100%;"></a>
         </div>
           </div>
         </div>
@@ -754,33 +768,69 @@
        </div>
 </div>
    </div>
-   <div class="jumbotron">
-     <h1>Our vision/our mission </h1>
-   </div>
-   <div class="container">
-       <section style="height:80px;"></section>
-   	<div class="row" style="text-align:center;">
-   		<h2>Bootstrap Dark Footer UI</h2>
+   <div id="myCarousel2" class="carousel slide" data-ride="carousel">
+     <!-- Indicators -->
+     <ol class="carousel-indicators">
+       <li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
+       <li data-target="#myCarousel2" data-slide-to="1"></li>
+     </ol>
+
+     <!-- Wrapper for slides -->
+     <div class="carousel-inner">
+       <div class="item active">
+       <a href="#"><img src="{% static 'webpages/images/vision.png' %}" style='width:100%;'alt="" ></a>
+       </div>
+       <div class="item">
+       <a href="#">  <img src="{% static 'webpages/images/Mission.png' %}"style='width:100%;' alt="" ></a>
+       </div>
+       <a class="left carousel-control" href="#myCarousel2" data-slide="prev">
+         <span class="glyphicon glyphicon-chevron-left"></span>
+         <span class="sr-only">Previous</span>
+       </a>
+       <a class="right carousel-control" href="#myCarousel2" data-slide="next">
+         <span class="glyphicon glyphicon-chevron-right"></span>
+         <span class="sr-only">Next</span>
+       </a>
+       </div>
+       <!-- <section style="height:80px;"></section>
+   	<div class="row" style="text-align:center;margin-right:0px;"> -->
+
    	</div>
          <footer class="footer-bs">
            <div class="row">
            	<div class="col-md-3 footer-brand animated fadeInLeft">
-               	<h2>Logo</h2>
-                   <p>Suspendisse hendrerit tellus laoreet luctus pharetra. Aliquam porttitor vitae orci nec ultricies. Curabitur vehicula, libero eget faucibus faucibus, purus erat eleifend enim, porta pellentesque ex mi ut sem.</p>
-                   <p>© 2014 BS3 UI Kit, All rights reserved</p>
+              <div class="item">
+                <h2>Logo</h2>
+                   <p>Ekal Shiksha is an Ed-tech company which provides one on one individual online classes. It is an initiative which aims to revolutionize the standard teaching and learning methods. We believe that each student has his or her personal learning speed, method and curriculum which is very important for a teacher to understand and personalize their teaching methods according to the students not vice versa. This platform is especially built for those who have immense potential but are never focused on in group classes, the growth of such students is our moto.
+
+<br>We have been in the teaching industry for past four years, catered to more than 1000s of students till the date. We are unique in a manner that we not only provide tuitions but also we make sure that the performance of each student is tracked through our LMS system and they get to check their clearity of concepts by the MCQs provided after each concept is taught. We have adopted the EAD approach for the better learning, understanding and self assessing of students. We are in a way parent friendly and make sure that the parents are kept in loop for each activity of the student and the teacher.
+
+<br>We have accommodated the best of talented teachers from all across the India for students who believe in learning beyond a classroom. We are a one step solution for all those parents who worry about their kid not being focused enough in group classes, for those who believe that their child can do far better if focused a little more, for those who worry for their kid’s safety when they are at work and their child alone with a teacher at home, for those who worry sending their child to coaching at odd hours and most of all for those who not only believe in passing but in learning.</p>
+</div>
                </div>
-           	<div class="col-md-4 footer-nav animated fadeInUp">
-               	<h4>Menu —</h4>
-               	<div class="col-md-6">
-                       <ul class="pages">
-                           <li><a href="#">Travel</a></li>
-                           <li><a href="#">Nature</a></li>
-                           <li><a href="#">Explores</a></li>
-                           <li><a href="#">Science</a></li>
-                           <li><a href="#">Advice</a></li>
+           	<div class="col-md-6 footer-nav animated fadeInUp">
+               	<h4 class='para'>Menu —</h4>
+               	<div class="col-md-4">
+                       <ul class="list">
+                           <li><a href="{% url '6th' %}">Class 6th</a></li>
+                           <li><a href="{% url '7th' %}">Class 7th</a></li>
+                           <li><a href="{% url '8th' %}">Class 8th</a></li>
+                           <li><a href="{% url '9th' %}">Class 9th</a></li>
+                           <li><a href="{% url '10th' %}">Class 10th</a></li>
+                           <li><a href="{% url '11th_Science' %}">Class 11th Science</a></li>
+                           <li><a href="{% url '11th_Commerce' %}">Class 11th Commerce</a></li>
+                         </ul>
+                       </div>
+                           <div class="col-md-4">
+                                  <ul class="list">
+
+                           <li><a href="{% url '11th_Humanities' %}">Class 11th Humanities</a></li>
+                           <li><a href="{% url '12th_Science' %}">Class 12th Science</a></li>
+                           <li><a href="{% url '12th_Commerce' %}">Class 12th Commerce</a></li>
+                           <li><a href="{% url '12th_Humanities' %}">Class 12th Humanities</a></li>
                        </ul>
                    </div>
-               	<div class="col-md-6">
+               	<div class="col-md-4">
                        <ul class="list">
                            <li><a href="#">About Us</a></li>
                            <li><a href="#">Contacts</a></li>
@@ -789,20 +839,20 @@
                        </ul>
                    </div>
                </div>
-           	<div class="col-md-2 footer-social animated fadeInDown">
+           	<div class="col-md-3 footer-social animated fadeInDown">
                	<h4>Follow Us</h4>
                	<ul>
-                   	<li><a href="#">Facebook</a></li>
-                   	<li><a href="#">Twitter</a></li>
+                   	<li><a href="https://www.facebook.com/ekalshiksha/">Facebook</a></li>
+                   	<li><a href="https://twitter.com/ekalshiksha?lang=en">Twitter</a></li>
                    	<li><a href="https://www.instagram.com/ekal_shiksha/" target="_blank">Instagram</a></li>
-                   	<li><a href="#">Linkdin</a></li>
+                   	<li><a href="https://www.linkedin.com/company/ekal-shiksha/?originalSubdomain=in">Linkdin</a></li>
                    </ul>
                </div>
            	</div>
        </footer>
-     </div>
+
 </body>
 
-
+<script src="{% static 'webpages/Js/ReadMore.js' %}"></script>
 <script src="{% static 'webpages/css/dist/js/bootstrap.min.js' %}" crossorigin="anonymous"></script>
 </html>
